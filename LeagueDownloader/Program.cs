@@ -96,7 +96,7 @@ namespace LeagueDownloader
         static int InstallProject(ProjectOptions opts)
         {
             var radsInteractor = new RADSInteractor(opts.Platform);
-            radsInteractor.InstallProject(opts.OutputFolder, opts.Name, opts.Version, opts.DeployMode);
+            radsInteractor.InstallProjectExperimental(opts.OutputFolder, opts.Name, opts.Version, opts.DeployMode);
             return 1;
         }
 
